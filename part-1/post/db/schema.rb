@@ -21,18 +21,20 @@ ActiveRecord::Schema.define(version: 20171020161029) do
 
   create_table "messages", force: :cascade do |t|
     t.text "message"
-    t.integer "thread_id"
+    t.integer "thred_id"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["thred_id"], name: "index_messages_on_thred_id"
+    t.index ["user_id"], name: "index_messages_on_user_id"
   end
 
   create_table "threds", force: :cascade do |t|
     t.string "title"
     t.integer "forum_id"
-    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["forum_id"], name: "index_threds_on_forum_id"
   end
 
   create_table "users", force: :cascade do |t|
