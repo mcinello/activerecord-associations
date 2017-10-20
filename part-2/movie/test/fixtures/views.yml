@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  times_viewed: 1
+  film: one
+  viewer: one
+
+two:
+  times_viewed: 1
+  film: two
+  viewer: two
