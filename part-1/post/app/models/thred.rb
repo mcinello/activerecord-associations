@@ -1,5 +1,5 @@
 class Thred < ApplicationRecord
   belongs_to :forum
   has_many :messages
-  has_many :users, through: :message
+  has_many :users, through: :messages
 end

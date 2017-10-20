@@ -1,6 +1,6 @@
 class Play < ApplicationRecord
 
   has_many :roles
-  has_many :actors, through: :role
+  has_many :actors, through: :roles
 
 end

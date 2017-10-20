@@ -1,4 +1,4 @@
 class User < ApplicationRecord
   has_many :messages
-  has_many :threds, through: :message
+  has_many :threds, through: :messages
 end
